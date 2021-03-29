@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>  
+<head>
+    <title>
+        Array
+    </title>
+</head>
+<body style="text-align:center;">
+    <h1 style="color: green">  
+        Array  
+    </h1>
+    <p id="GFG_UP"></p>
+    <button onclick="gfg_Run()">
+        Click Here
+    </button>
+    <p id="GFG_DOWN" style="color:green;"></p>
+    <script>
+        let minNumber = 100;
+        let maxNumber = 999;
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        el_up.innerHTML = "Click on the button to generate the array.";
+
+        function gfg_Run() {
+            el_down.innerHTML = Array.from({
+                length: 10
+            }, () => Math.floor(Math.random() * (maxNumber - minNumber)) + minNumber
+            );
+        }
+    </script>
+</body>
+  
+</html>

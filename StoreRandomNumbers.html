@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="genrateNumber"></p>
+    <script>
+        let minNumber = 100;
+        let maxNumber = 999;
+        let arrayNumber = [];
+        let i=0;
+
+        function genrateNumber(){
+            if (arrayNumber.length<=10){
+                arrayNumber[i++] = Math.floor(Math.random() * (maxNumber - minNumber)) + minNumber;
+                document.write(arrayNumber[i]);
+            }
+            else{
+                i =0;
+                
+            }
+        }
+        document.getElementById("genrateNumber");
+        document.write(arrayNumber[i]);
+    </script>
+</body>
+</html>
